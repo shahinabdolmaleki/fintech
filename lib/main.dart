@@ -1,7 +1,10 @@
 import 'package:fintech/pages/navigator_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+Future<void> main() async {
+  //security check for.env file
+  await dotenv.load(fileName: '.env');
   runApp(const MyApp());
 }
 

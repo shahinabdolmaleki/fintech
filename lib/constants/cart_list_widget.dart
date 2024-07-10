@@ -1,30 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:u_credit_card/u_credit_card.dart';
 
 final List<Widget> creditCarts = [
-      const CreditCardUi(
+       CreditCardUi(
         cardHolderFullName: 'Shahin Abdolmaleki',
-        cardNumber: '1234567812345678',
+        cardNumber: dotenv.env['cart1']!,
         validThru: '10/25',
-        cardProviderLogo: Image(image: AssetImage('assets/images/spark.png')),
+        cardProviderLogo: const Image(image: AssetImage('assets/images/spark.png')),
         cardProviderLogoPosition: CardProviderLogoPosition.left,
       ),
-      const CreditCardUi(
+       CreditCardUi(
         cardHolderFullName: 'John Doe',
-        cardNumber: '1234567812345678',
+        cardNumber: dotenv.env['cart2']!,
         validThru: '10/25',
         topLeftColor: Colors.red,
         bottomRightColor: Colors.purpleAccent,
-        cardProviderLogo: Image(image: AssetImage('assets/images/spark.png')),
+        cardProviderLogo:const Image(image: AssetImage('assets/images/spark.png')),
         cardProviderLogoPosition: CardProviderLogoPosition.left,
       ),
-      const CreditCardUi(
+       CreditCardUi(
         cardHolderFullName: 'Shahin Abdolmaleki',
-        cardNumber: '1234567812345678',
+        cardNumber: dotenv.env['cart3']!,
         validThru: '10/25',
         topLeftColor: Colors.amber,
         bottomRightColor: Colors.purpleAccent,
-        cardProviderLogo: Image(image: AssetImage('assets/images/spark.png')),
+        cardProviderLogo:const Image(image: AssetImage('assets/images/spark.png')),
         cardProviderLogoPosition: CardProviderLogoPosition.left,
       ),
     ];

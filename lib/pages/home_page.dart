@@ -5,6 +5,7 @@ import 'package:fintech/constants/payment_list_widget.dart';
 import 'package:fintech/constants/service_list_widget.dart';
 import 'package:fintech/widgets/appbar_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,7 +21,7 @@ class HomePage extends StatelessWidget {
       child: Column(
         children: [
           appBarWidgetWithPhoto(
-            image: 'Ellipse 307.png',
+            image: dotenv.env['image1']!,
             title: 'Fintech',
             icon: const Icon(Icons.notifications_active_outlined),
           ),
