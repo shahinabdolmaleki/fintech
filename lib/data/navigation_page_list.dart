@@ -1,3 +1,4 @@
+import 'package:fintech/pages/cart_page.dart';
 import 'package:fintech/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,5 @@ final List<Widget> bodyContent = [
   const Text(
     "Page3",
   ),
-  const Text(
-    "Page4",
-  ),
+  const CartPage(),
 ];

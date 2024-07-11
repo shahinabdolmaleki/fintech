@@ -1,5 +1,5 @@
 import 'package:fintech/constants/color.dart';
-import 'package:fintech/constants/navigation_page_list.dart';
+import 'package:fintech/data/navigation_page_list.dart';
 import 'package:fintech/data/model.dart';
 import 'package:flutter/material.dart';
 
