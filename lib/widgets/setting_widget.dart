@@ -62,7 +62,7 @@ Widget settingWidgetWithToggle({
   required String textsetting,
   required onChange,
 }) {
-  bool giveVerse = false;
+ 
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10),
     child: Container(
